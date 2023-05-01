@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 // Components
@@ -12,10 +13,12 @@ import { Header } from "./components/Header";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Header />
-    </>
+    <Router>
+      <>
+        <NavBar />
+        <Header />
+      </>
+    </Router>
   );
 }
 

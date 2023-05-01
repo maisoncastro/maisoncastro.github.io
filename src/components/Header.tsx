@@ -1,16 +1,16 @@
-import React from "react";
-
 export const Header = () => {
   return (
     <div className="header">
-      <img src="./public/me.jpg" alt="profile" />
+      <div className="header-img">
+        <img src="/me.jpg" alt="profile" width="587" height="587" />
+      </div>
       <div className="header-info">
-        <div>
-          <span>Nazim-Yoldas Sesen</span>
+        <div className="title-subtitle">
+          <span className="title">Nazim-Yoldas Sesen</span>
           <span>WEB DEVELOPER & UX/UI DESIGNER</span>
         </div>
-        <div>
-          <span>+1.514.345.8893</span>
+        <div className="contact-info">
+          <span>+1-514-345-8893</span>
           <span>NAZIMSESEN@GMAIL.COM</span>
           <span>MONTREAL, QUEBEC</span>
         </div>
