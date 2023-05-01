@@ -97,3 +97,26 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
+.skills-section {
+  margin-top: 2.5rem;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stack {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
