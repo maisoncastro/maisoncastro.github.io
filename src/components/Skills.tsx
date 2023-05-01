@@ -2,16 +2,14 @@ import Marquee from "react-fast-marquee";
 
 export const Skills = () => {
   const techstack = [
-    "HTML",
-    "CSS",
     "JavaScript",
     "TypeScript",
     "React",
     "NEXT.JS",
-    "TAILWIND CSS",
+    "TAILWIND",
     "MATERIAL UI",
-    "GIT",
     "RUBY",
+    "GIT",
   ];
 
   const designstack = ["FIGMA", "PHOTOSHOP", "ILLUSTRATOR", "XD"];

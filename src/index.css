@@ -118,5 +118,8 @@ hr {
 .stack {
   display: flex;
   justify-content: space-around;
-  gap: 5rem;
+}
+
+.stack span {
+  margin-right: 5rem;
 }
