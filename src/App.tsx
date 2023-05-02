@@ -14,9 +14,11 @@ function App() {
   return (
     <Router>
       <>
-        <NavBar />
-        <Header />
-        <Skills />
+        <div className="app-containesr">
+          <NavBar />
+          <Header />
+          <Skills />
+        </div>
       </>
     </Router>
   );

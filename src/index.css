@@ -41,6 +41,11 @@ a:hover {
 hr {
   border: 1px solid var(--font-primary-color);
   margin-top: 10px;
+  max-width: 1383px;
+}
+
+.app-container {
+  max-width: 1383px;
 }
 
 .nav-bar {
@@ -55,7 +60,7 @@ hr {
 .header {
   background-color: var(--color-primary);
   height: 640px;
-  width: 100%;
+  width: 1385px;
   border: 1px solid var(--font-primary-color);
 
   display: flex;
