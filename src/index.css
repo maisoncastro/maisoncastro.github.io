@@ -128,3 +128,14 @@ hr {
 .stack span {
   margin-right: 5rem;
 }
+
+.projects-section {
+  margin-top: 2.5rem;
+}
+
+.projects-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}

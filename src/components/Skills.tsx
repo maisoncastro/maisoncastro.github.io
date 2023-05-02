@@ -21,14 +21,14 @@ export const Skills = () => {
         <span>Skills</span>
       </div>
       <div className="skills-list">
-        <Marquee pauseOnHover={true}>
+        <Marquee pauseOnHover={true} speed={100}>
           <div className="stack">
             {techstack.map((tech) => (
               <span key={tech}>{tech}</span>
             ))}
           </div>
         </Marquee>
-        <Marquee direction="right" pauseOnHover={true}>
+        <Marquee direction="right" pauseOnHover={true} speed={150}>
           <div className="stack">
             {designstack.map((design) => (
               <span key={design}>{design}</span>
