@@ -214,3 +214,16 @@ hr {
 
   margin-top: 5rem;
 }
+
+.footer-section {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 5rem;
+  width: 100%;
+  background-color: var(--color-primary);
+  border: 1px solid var(--font-primary-color);
+}
+.footer-section span {
+  padding-right: 0.2rem;
+}
