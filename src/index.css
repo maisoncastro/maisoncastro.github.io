@@ -207,3 +207,10 @@ hr {
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
+
+.message-title {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5rem;
+}
