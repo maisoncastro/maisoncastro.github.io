@@ -211,6 +211,16 @@ hr {
 
   padding: 8px 10px;
   border-radius: 30px;
+  z-index: 2;
+
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.project-stack span:hover {
+  border: 1px solid var(--font-primary-color);
+  background-color: var(--color-primary);
+  backdrop-filter: blur(10px);
+  color: var(--font-primary-color);
 }
 
 .contact-section {
