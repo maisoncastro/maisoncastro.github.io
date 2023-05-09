@@ -61,7 +61,7 @@ hr {
 .header {
   background-color: var(--color-primary);
   height: 640px;
-  width: 1385px;
+  /* width: 1385px; */
   border: 1px solid var(--font-primary-color);
 
   display: flex;
@@ -306,5 +306,9 @@ hr {
     display: flex;
     justify-content: center;
     max-width: none;
+  }
+
+  .title {
+    font-size: 120px;
   }
 }
