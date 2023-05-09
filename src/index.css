@@ -42,11 +42,11 @@ a:hover {
 hr {
   border: 1px solid var(--font-primary-color);
   margin-top: 10px;
-  max-width: 1383px;
+  max-width: 1920px;
 }
 
 .app-container {
-  max-width: 1383px;
+  max-width: 1920px;
 }
 
 .nav-bar {
@@ -298,5 +298,13 @@ hr {
 
   .projects-container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1920px) {
+  .app-container {
+    display: flex;
+    justify-content: center;
+    max-width: none;
   }
 }
