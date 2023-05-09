@@ -28,15 +28,30 @@
 }
 
 a {
+  position: relative;
   text-decoration: none;
   color: var(--font-primary-color);
   cursor: pointer;
-
   transition: color 0.2s ease-in-out;
+}
+
+a::before {
+  content: "";
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px; */
+  background-color: var(--color-primary);
+  transition: width 0.2s ease-in-out;
 }
 
 a:hover {
   color: var(--color-primary);
+}
+
+a:hover::before {
+  width: 100%;
 }
 
 hr {
@@ -213,7 +228,7 @@ hr {
   display: flex;
   justify-content: center;
 
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .footer-section {

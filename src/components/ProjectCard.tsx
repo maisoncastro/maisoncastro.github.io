@@ -34,6 +34,13 @@ const projects = [
     url: "https://blendedshades.vercel.app/",
     stack: ["Next.JS", "TypeScript", "CSS"],
   },
+  {
+    id: 6,
+    title: "Ludex",
+    image: "https://via.placeholder.com/150",
+    url: "https://ludex.gg",
+    stack: ["Next.JS", "TypeScript", "CSS"],
+  },
 ];
 
 export const ProjectCard = () => {

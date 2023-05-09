@@ -6,7 +6,9 @@ export const Contact = () => {
         <span>Contact</span>
       </div>
       <div className="message-title">
-        <span>Shoot me a message</span>
+        <a href="mailto:nazimsesen@gmail.com">
+          <span>Shoot me a message</span>
+        </a>
       </div>
     </div>
   );
