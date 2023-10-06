@@ -16,7 +16,7 @@ const projects = [
   {
     id: 3,
     title: "StealthSquad",
-    image: "https://via.placeholder.com/150",
+    image: "/project-covers/stealthsquad.png",
     url: "https://stealthsquad.vercel.app/",
     stack: ["Vite", "TypeScript", "Tailwind"],
   },
