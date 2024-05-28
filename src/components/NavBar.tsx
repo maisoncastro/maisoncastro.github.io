@@ -5,9 +5,9 @@ export const NavBar = () => {
     <>
       <hr />
       <div className="nav-bar">
-        <Link to="/">Skills</Link>
-        <Link to="/">Projects</Link>
-        <Link to="/">Contact</Link>
+        <Link to="#skills">Skills</Link>
+        <Link to="#projects">Projects</Link>
+        <Link to="#contact">Contact</Link>
 
         <a
           className="nav-link"

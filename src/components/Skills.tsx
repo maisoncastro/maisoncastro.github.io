@@ -17,7 +17,7 @@ export const Skills = () => {
   const designstack = ["FIGMA", "PHOTOSHOP", "ILLUSTRATOR", "INDESIGN", "XD"];
 
   return (
-    <div className="skills-section">
+    <div className="skills-section" id="skills">
       <div className="skills-title">
         <span>Skills</span>
         <span>Skills</span>
