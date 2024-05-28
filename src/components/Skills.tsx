@@ -6,13 +6,15 @@ export const Skills = () => {
     "TypeScript",
     "React",
     "NEXT.JS",
+    "VITE",
+    "Nuxt.JS",
     "TAILWIND",
     "MATERIAL UI",
     "RUBY",
     "GIT",
   ];
 
-  const designstack = ["FIGMA", "PHOTOSHOP", "ILLUSTRATOR", "XD"];
+  const designstack = ["FIGMA", "PHOTOSHOP", "ILLUSTRATOR", "INDESIGN", "XD"];
 
   return (
     <div className="skills-section">
