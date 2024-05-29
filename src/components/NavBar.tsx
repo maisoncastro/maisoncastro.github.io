@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
 
-export const NavBar = () => {
+type ScrollToSection = (sectionId: string) => void;
+type NavBarProps = {
+  scrollToSection: ScrollToSection;
+};
+export const NavBar = ({ scrollToSection }: NavBarProps) => {
   return (
     <>
       <hr />
       <div className="nav-bar">
-        <Link to="#skills">Skills</Link>
-        <Link to="#projects">Projects</Link>
-        <Link to="#contact">Contact</Link>
+        <Link to="#skills" onClick={() => scrollToSection("skills")}>
+          Skills
+        </Link>
+        <Link to="#projects" onClick={() => scrollToSection("projects")}>
+          Projects
+        </Link>
+        <Link to="#contact" onClick={() => scrollToSection("contact")}>
+          Contact
+        </Link>
 
         <a
           className="nav-link"

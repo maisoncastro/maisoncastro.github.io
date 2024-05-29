@@ -1,4 +1,3 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Lenis from "lenis";
 import { NavBar } from "./components/NavBar";
@@ -7,35 +6,49 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
+type ScrollToSection = (sectionId: string) => void;
 function App() {
+  const lenisRef = useRef<Lenis | null>(null);
+
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: 0,
+    lenisRef.current = new Lenis({
+      lerp: 0.1,
     });
 
     function raf(time: number) {
-      lenis.raf(time);
+      if (lenisRef.current) {
+        lenisRef.current.raf(time);
+      }
       requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    const rafId = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
+  const scrollToSection: ScrollToSection = (sectionId: string) => {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement && lenisRef.current) {
+      lenisRef.current.scrollTo(sectionElement);
+    }
+  };
+
   return (
-    <Router>
-      <div className="app-container">
-        <div className="content-container">
-          <NavBar />
-          <Header />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
+    <div className="app-container">
+      <div className="content-container">
+        <NavBar scrollToSection={scrollToSection} />
+        <Header />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
       </div>
-    </Router>
+    </div>
   );
 }
 
