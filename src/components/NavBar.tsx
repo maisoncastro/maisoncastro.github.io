@@ -7,7 +7,7 @@ type NavBarProps = {
 export const NavBar = ({ scrollToSection }: NavBarProps) => {
   return (
     <>
-      <hr />
+      {/* <hr /> */}
       <div className="nav-bar">
         <Link to="#skills" onClick={() => scrollToSection("skills")}>
           Skills

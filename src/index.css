@@ -71,7 +71,7 @@ hr {
   color: var(--font-primary-color);
   gap: 45px;
   margin-bottom: 45px;
-  margin-top: 45px;
+  /* margin-top: 45px; */
 }
 
 .header {
@@ -111,7 +111,7 @@ hr {
 }
 
 .title {
-  font-size: 70px;
+  font-size: clamp(70px, 5vw, 185px);
   letter-spacing: -0.05em;
 }
 
@@ -266,10 +266,6 @@ hr {
     font-size: 20px;
   }
 
-  .nav-bar {
-    flex-direction: column;
-  }
-
   .header {
     flex-direction: column;
     align-items: center;
@@ -334,9 +330,9 @@ hr {
     max-width: none;
   }
 
-  .title {
-    font-size: 120px;
-  }
+  /* .title {
+    font-size: 185px;
+  } */
 }
 
 /* Lenis */
